@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tractor control</title>
+    
+</head>
+<style>
+    h1 {text-align: center;}
+    .center{
+        border:1px solid #d3d3d3;
+        background-color: #f1f1f1;
+        margin: 0;
+        
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      -ms-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+      
+    }
+    .center{
+      font-family: helvetica;
+      font-weight: bold;
+      color: #14396A !important;
+      
+      text-shadow: 1px 3px 0px #7CACDE;
+      box-shadow: 1px 1px 1px #BEE2F9;
+      padding: 10px 100px;
+      border-radius: 20px;
+      border: 2px solid #3866A3;
+      background: #63B8EE;
+      background: linear-gradient(to top, #63B8EE, #468CCF);
+      cursor: pointer;
+      background-color: #4CAF50; /* Green */
+      color: white;
+    }
+    .center {font-size: 50px;}
+    
+    .center:hover {
+      color: #14396A !important;
+      background: #468CCF;
+      background: linear-gradient(to top, #468CCF, #63B8EE);
+    }
+    </style>
+       
+    <h1>FT 60 controlling</h1>
+
+    <div class="center">      
+    <form method ="post" action="">
+            <div style="text-align:center;width:1000px;">        
+              <button type="LEFT_180" name="LEFT_180" value="LEFT_180"> LEFT_180 </button>
+              <button type="LEFT_90" name="LEFT_90" value="LEFT_90"> LEFT_90 </button>
+              <button type="LEFT_60" name="LEFT_60" value="LEFT_60"> LEFT_60</button>
+             
+              <button type="STRAIGHT" name="STRAIGHT" value="STRAIGHT">STRAIGHT</button>
+              
+              <button type="RIGHT_60" name="RIGHT_60" value="RIGHT_60"> RIGHT_60 </button> 
+              <button type="RIGHT_90" name="RIGHT_90" value="RIGHT_90"> RIGHT_90 </button>
+              <button type="RIGHT_180" name="RIGHT_180" value="RIGHT_180"> RIGHT_180 </button><br><br>     
+      </form> 
+
+      {% if message %}
+        <p>{{ message }}</p>
+    {% endif %}
+
+    
+
+</body>
+</html>
